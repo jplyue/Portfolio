@@ -1,0 +1,65 @@
+#block-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#block-container .block {
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.block a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.block h2 {
+  margin-left: 10px;
+}
+
+.block .imgbox {
+  width: 400px;
+  height: auto;
+}
+
+.block .imgbox img {
+  width: 100%;
+  height: auto;
+}
+
+.block.b1 {
+  /* background-image: url(/img/project1_IndexBg.png); */
+  background-color: #040404;
+}
+
+.block.b2 {
+  /* background-image: url(/img/project2_IndexBg.png); */
+  background-color: #04079e;
+}
+
+.block.b3 {
+  /* background-image: url(/img/project3_IndexBg.png); */
+  background-color: #ee8dbd;
+}
+
+.block.b4 {
+  /* background-image: url(/img/project4_IndexBg.png); */
+  background-color: #030000;
+}
+
+
+/*# sourceMappingURL=/css.967bad95.css.map */
