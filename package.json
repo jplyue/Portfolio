@@ -1,17 +1,19 @@
 {
-  "name": " ",
+  "name": "Portfolio",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
+  "description": "Portfolio for Yifei Gao",
+  "keywords": "Portfolio",
   "license": "",
-  "author": "",
+  "author": "Yifei Gao",
   "scripts": {
-    "build": "rm -rf dist/ && parcel build index.html",
+    "build": "rm -rf dist/ && parcel build index.html --public-url portfolio",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.6.0"
   }
