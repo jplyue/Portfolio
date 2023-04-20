@@ -6,7 +6,7 @@
   "license": "",
   "author": "Yifei Gao",
   "scripts": {
-    "build": "rm -rf dist/ && parcel build index.html",
+    "build": "rm -rf dist/ && parcel build index.html --public-url /",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +20,7 @@
   "customDistStructure": {
     "config": {
       ".js": "js",
+      ".css": "css",
       "images": [
         ".jpg",
         ".png"
