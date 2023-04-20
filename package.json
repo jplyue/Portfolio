@@ -6,7 +6,7 @@
   "license": "",
   "author": "Yifei Gao",
   "scripts": {
-    "build": "rm -rf dist/ && parcel build index.html --public-url portfolio",
+    "build": "rm -rf dist/ && parcel build index.html",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,6 +15,23 @@
   "devDependencies": {
     "gh-pages": "^5.0.0",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.6.0"
+    "parcel-plugin-custom-dist-structure": "^1.1.18"
+  },
+  "customDistStructure": {
+    "config": {
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".png"
+      ],
+      ".fileExtension": "folder/in/dist",
+      "folder/in/dist": [
+        ".file",
+        ".extensions"
+      ]
+    },
+    "options": {
+      "development": true
+    }
   }
 }
