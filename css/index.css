@@ -60,3 +60,16 @@
   /* background-image: url(/img/project4_IndexBg.png); */
   background-color: #030000;
 }
+
+/* project pages */
+.project-single-menu {
+  text-align: center;
+}
+.display {
+  width: 100%;
+}
+
+.display img {
+  width: 100%;
+  margin-bottom: 10px;
+}
