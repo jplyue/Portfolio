@@ -20,12 +20,105 @@
     <link rel="stylesheet" href="../css/index.css" />
 
     <meta name="theme-color" content="#fafafa" />
+
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      .center-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #mockup {
+        position: relative;
+        height: 800px;
+        background-color: #fef2ed;
+        overflow: hidden;
+      }
+      .mock-box {
+        width: 247px;
+        height: 498px;
+        width: 370px;
+        height: 546px;
+      }
+
+      .mock-box {
+        display: flex;
+        align-items: center;
+      }
+
+      .mock-phone {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 10;
+      }
+
+      .slides-box {
+        width: 100%;
+        height: 100%;
+        margin-left: 56px;
+
+        /* margin-left: 11px;
+        margin-top: -16.5px; */
+      }
+
+      .mock-box .slides {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        height: 100%;
+
+        transition: margin-left 0.5s;
+      }
+
+      .img-box {
+        height: 100%;
+        padding: 30px 15px;
+        box-sizing: border-box;
+      }
+
+      .arrows {
+        position: absolute;
+        top: 20px;
+        display: flex;
+
+        font-size: 5em;
+        cursor: pointer;
+
+        z-index: 11;
+      }
+
+      .arrows a {
+        color: #000;
+      }
+
+      .arrows .arrow-left {
+        margin-right: 2em;
+      }
+
+      .mock-box .slides img {
+        height: 100%;
+      }
+    </style>
   </head>
 
   <body>
     <div class="project-single-menu">
-      <a href="../index.html"><h2>Index</h2></a>
+      <a href="../index.html"><h2>&larr;Index</h2></a>
     </div>
+
     <div class="display">
       <img src="../images/all/1/YifeiGao_Portfolio_1.jpg" alt="" />
       <img src="../images/all/1/YifeiGao_Portfolio_2.jpg" alt="" />
@@ -36,8 +129,68 @@
       <img src="../images/all/1/YifeiGao_Portfolio_7.jpg" alt="" />
     </div>
 
-    <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/main.js"></script>
+    <div id="mockup" class="center-position">
+      <div class="arrows">
+        <div class="arrow arrow-left">&larr;</div>
+        <div class="arrow arrow-right">&rarr;</div>
+      </div>
+      <div class="mock-box">
+        <div class="mock-phone center-position">
+          <img src="../images/mockupPhone.png" alt="" />
+        </div>
+        <div class="slides-box">
+          <div class="slides">
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-01.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-02.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-03.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-04.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-05.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-06.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-07.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-08.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-09.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-10.png" alt="" /></div>
+            <div class="img-box"><img src="../images/appPng/appDesign4.2-11.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <script type="module" src="../js/plugins.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module">
+      const $arrowLeft = document.querySelector('.arrow-left');
+      const $arrowRight = document.querySelector('.arrow-right');
+      const $slides = document.querySelector('.slides');
+      const $img = $slides.querySelector('.img-box');
+
+      let curIndex = 0;
+
+      function showSlide() {
+        console.log($img);
+        const slideWidth = $img.clientWidth + 40 + 2 / 10;
+        $slides.style.marginLeft = -curIndex * slideWidth + `px`;
+        console.log(slideWidth);
+      }
+
+      $arrowLeft.addEventListener('click', function () {
+        curIndex--;
+        if (curIndex < 0) {
+          curIndex = $slides.children.length - 1;
+        }
+
+        showSlide();
+      });
+
+      $arrowRight.addEventListener('click', function () {
+        curIndex++;
+        if (curIndex >= $slides.children.length) {
+          curIndex = 0;
+        }
+
+        showSlide();
+      });
+    </script>
   </body>
 </html>
