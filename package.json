@@ -6,7 +6,8 @@
   "license": "",
   "author": "Yifei Gao",
   "scripts": {
-    "build": "parcel build index.html --public-url /Portfolio/",
+    "build": "parcel build index.html",
+    "prod": "rm -rf dist/ && parcel build index.html --public-url portfolio",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,24 +18,18 @@
     "@parcel/transformer-webmanifest": "^2.8.3",
     "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
-    "parcel-plugin-custom-dist-structure": "^1.1.18"
+    "parcel-plugin-structurize": "^2.4.4"
   },
-  "customDistStructure": {
-    "config": {
-      ".js": "js",
-      ".css": "css",
-      "images": [
-        ".jpg",
-        ".png"
-      ],
-      ".fileExtension": "folder/in/dist",
-      "folder/in/dist": [
-        ".file",
-        ".extensions"
-      ]
-    },
-    "options": {
-      "development": true
-    }
+  "parcel-plugin-structurize": {
+    "rules": [
+      {
+        "match": "*.js",
+        "folder": "scripts"
+      },
+      {
+        "match": "*.{jpg,png,gif,svg}",
+        "folder": "images"
+      }
+    ]
   }
 }
