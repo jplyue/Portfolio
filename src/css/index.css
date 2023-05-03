@@ -74,6 +74,47 @@
   margin-bottom: 10px;
 }
 
+.project-single-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.left {
+  text-align: left;
+  margin-left: 10px;
+}
+
 .project-single-menu a {
   color: #ccccff;
+}
+
+.project-single-menu a.active {
+  color: #9e9eeb;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #545454;
+}
+.text span {
+  color: #bd3a46;
+}
+
+.black-bg {
+  background-color: #0a0a0a;
+}
+
+.text-center {
+  text-align: center;
 }

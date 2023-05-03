@@ -18,129 +18,205 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/page1.css" />
 
     <meta name="theme-color" content="#fafafa" />
-
-    <style>
-      a {
-        text-decoration: none;
-      }
-
-      .center-position {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #mockup {
-        position: relative;
-        height: 800px;
-        background-color: #fef2ed;
-        overflow: hidden;
-      }
-      .mock-box {
-        width: 247px;
-        height: 498px;
-        width: 370px;
-        height: 546px;
-      }
-
-      .mock-box {
-        display: flex;
-        align-items: center;
-      }
-
-      .mock-phone {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-
-        width: 100%;
-        height: 100%;
-
-        z-index: 10;
-      }
-
-      .slides-box {
-        width: 100%;
-        height: 100%;
-        margin-left: 56px;
-
-        /* margin-left: 11px;
-        margin-top: -16.5px; */
-      }
-
-      .mock-box .slides {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-
-        height: 100%;
-
-        transition: margin-left 0.5s;
-      }
-
-      .img-box {
-        height: 100%;
-        padding: 30px 15px;
-        box-sizing: border-box;
-      }
-
-      .arrows {
-        position: absolute;
-        top: 20px;
-        display: flex;
-
-        font-size: 5em;
-        cursor: pointer;
-
-        z-index: 11;
-      }
-
-      .arrows a {
-        color: #000;
-      }
-
-      .arrows .arrow-left {
-        margin-right: 2em;
-      }
-
-      .mock-box .slides img {
-        height: 100%;
-      }
-    </style>
   </head>
 
   <body>
     <div class="project-single-menu">
-      <a href="../../index.html"><h2>&#92;Index</h2></a>
+      <a href="../../index.html" class="left"><h2>&larr;Index</h2></a>
+      <a class="active" href="../../project1.html"><h2>Project 1</h2></a>
+      <a class="right"></a>
     </div>
 
-    <div id="mockup" class="center-position">
-      <div class="arrows">
-        <div class="arrow arrow-left">&larr;</div>
-        <div class="arrow arrow-right">&rarr;</div>
-      </div>
-      <div class="mock-box">
-        <div class="mock-phone center-position">
-          <img src="../images/mockupPhone.png" alt="" />
+    <div>
+      <!-- <img src="../images/all/1/YifeiGao_Portfolio_1.jpg" alt="" /> -->
+      <div class="p1 flex black-bg">
+        <img src="../images/all/1/p1-card.png" alt="" />
+        <div class="">
+          <h2>Chui Shui Unlimited Company</h2>
+          <h4>For developers</h4>
+          <div class="text">
+            <span>[CHUI SHUI]</span>
+            Unlimited Company is a company that hires developers to chat every day. 'Chui shui' is a Chinese slang term
+            that means to engage in casual and aimless conversation, and literally translates to 'blowing water' in
+            English. This project aims to improve the relationship between work-at-home (WFH) employees and the company.
+            The percentage of remote workers has increased sharply during Covid-19 lockdown, which has made WFH
+            employees' psychological problems more apparent. WFH workers can easily become disconnected from the
+            organization due to physical isolation. They cannot talk face-to-face, and important cues such as eye
+            contact, tone of voice, body language, and physical touch are easily lost during communication. This
+            physical isolation can lead to social isolation, causing people to feel lonely and depressed during the
+            isolated working process, and behave like cold machines working only for money. This discounts the role of a
+            company as an emotional support organization for an employee. The project aims to rebuild the relationship
+            between WFH employees and their companies.
+          </div>
+
+          <h3>Inspiration</h3>
+          <div class="text inspiration">
+            <p>
+              On February 2020, I began my first remote job as a developer in a US company. As lockdowns spread in
+              China, more people began to join the company. However, I quickly realized that I lacked connections with
+              the entire company. Compared to my previous offline work at the office, frequent communications were
+              limited to a small group of only 3-5 people. I had no contacts with any new colleagues and was not
+              familiar with most of them. I felt isolated while working at home and wondered how to relieve this
+              feeling. Therefore, I decided to study social contacts in a remote company.
+            </p>
+            <img src="../images/all/1/p1-inspiration1.png" alt="" />
+            <img src="../images/all/1/p1-inspiration2.png" alt="" />
+          </div>
         </div>
-        <div class="slides-box">
-          <div class="slides">
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-01.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-02.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-03.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-04.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-05.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-06.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-07.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-08.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-09.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-10.png" alt="" /></div>
-            <div class="img-box"><img src="../images/appPng/appDesign4.2-11.png" alt="" /></div>
+      </div>
+
+      <div class="p2 black-bg research">
+        <h2>Research</h2>
+        <div class="content">
+          <div id="c1" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content1.png" alt="" />
+              <img src="../images/all/1/p2-window-frame1.png" alt="" />
+            </div>
+          </div>
+          <div id="c2" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content2.png" alt="" />
+              <img src="../images/all/1/p2-window-frame2.png" alt="" />
+            </div>
+          </div>
+          <div id="c3" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content3.png" alt="" />
+            </div>
+          </div>
+          <div id="c4" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content4.png" alt="" />
+            </div>
+          </div>
+          <div id="c5" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content5.png" alt="" />
+              <img src="../images/all/1/p2-window-frame5.png" alt="" />
+            </div>
+          </div>
+          <div id="c6" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content6.png" alt="" />
+              <img src="../images/all/1/p2-window-frame6.png" alt="" />
+            </div>
+          </div>
+          <div id="c7" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content7.png" alt="" />
+              <img src="../images/all/1/p2-window-frame7.png" alt="" />
+            </div>
+          </div>
+          <div id="c8" class="window">
+            <div class="wrapper">
+              <img src="../images/all/1/p2-window-frame-content8.png" alt="" />
+            </div>
+          </div>
+          <div class="hand"></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-center">APP Showcase</h2>
+      <div id="mockup" class="center-position">
+        <div class="arrows">
+          <div class="arrow arrow-left">&larr;</div>
+          <div class="arrow arrow-right">&rarr;</div>
+        </div>
+        <div class="mock-box">
+          <div class="mock-phone center-position">
+            <img src="../images/mockupPhone.png" alt="" />
+          </div>
+          <div class="slides-box">
+            <div class="slides">
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-01.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-02.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-03.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-04.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-05.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-06.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-07.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-08.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-09.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-10.png" alt="" /></div>
+              <div class="img-box"><img src="../images/appPng/appDesign4.2-11.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p3">
+      <h2 class="text-center">APP Demonstration</h2>
+      <div class="flex" style="justify-content: center; margin: 20px 0">
+        <button id="start-testing">Start Testing</button>
+      </div>
+
+      <div class="center-position">
+        <div class="mock-phone">
+          <div class="topbar">
+            <img src="../images/all/1/p1-phone-topbar.png" alt="" />
+          </div>
+          <div class="flex space-between menu">
+            <div class="back"></div>
+            <div class="title"></div>
+            <div></div>
+          </div>
+
+          <div class="flex actions">
+            <div class="hangup-container">
+              <div class="hangup"></div>
+              <div>HANG UP</div>
+            </div>
+            <div class="timeleft-container">
+              <div id="countdown" class="text">10:00</div>
+              <div>TIME LEFT</div>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="video-container">
+            <div>
+              <div class="camera-container">
+                <video id="camera-video" autoplay></video>
+                <div>
+                  <div id="status"></div>
+                  <div>
+                    <span id="camera-voice-value">0</span>
+                    wpm
+                  </div>
+                </div>
+              </div>
+              <div class="static-video-container">
+                <div class="blur-container">
+                  <div class="blur-layer"></div>
+                  <video id="static-video" src="../images/all/1/static-video.mp4" autoplay></video>
+                </div>
+                <div>
+                  <div>
+                    <span>150</span>
+                    wpm
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="flex timeinterval">
+                <div class="onair">ON AIR</div>
+                <div>1:27</div>
+              </div>
+
+              <div class="flex buttons-container">
+                <div class="voice-button"></div>
+                <div class="video-button"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -158,6 +234,7 @@
 
     <script type="module" src="../js/plugins.js"></script>
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/project1.js"></script>
     <script type="module">
       const $arrowLeft = document.querySelector('.arrow-left');
       const $arrowRight = document.querySelector('.arrow-right');
