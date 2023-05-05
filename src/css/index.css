@@ -104,6 +104,10 @@
   align-items: center;
 }
 
+.flex.center {
+  justify-content: center;
+}
+
 .text {
   color: #545454;
 }

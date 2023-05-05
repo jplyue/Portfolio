@@ -19,14 +19,80 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/index.css" />
 
+    <link rel="stylesheet" href="../css/page3.css" />
+
     <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
-    <div class="project-single-menu">
-      <a href="../../index.html" class="left"><h2>&larr;Index</h2></a>
-      <a class="active" href="../../project1.html"><h2>Project 3</h2></a>
-      <a class="right"></a>
+    <div class="fix-top">
+      <div class="project-single-menu">
+        <a href="../../index.html" class="left"><h2>&larr;Index</h2></a>
+        <a class="active" href="../../project1.html"><h2>Project 3: Survive</h2></a>
+        <a class="right"></a>
+      </div>
+    </div>
+
+    <div class="show-image">
+      <img src="../images/all/3/project3-bg.jpg" alt="" />
+    </div>
+
+    <div class="figma-area">
+      <div class="figma-row">
+        <div class="figma-item">
+          <h3>Workflow</h3>
+          <div class="figma-container">
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="100%"
+              height="400px"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FgGFy3K2qzBHBoXTEUeolDo%2FProject3%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DHFqFewwdybPu5LRn-1"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="figma-item">
+          <h3>Website Prototype</h3>
+          <div class="figma-container">
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="100%"
+              height="400px"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FgGFy3K2qzBHBoXTEUeolDo%2FProject3%3Ftype%3Ddesign%26node-id%3D1%253A507%26t%3DHFqFewwdybPu5LRn-1"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="figma-item">
+          <h3>Mindmap</h3>
+          <div class="figma-container">
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="100%"
+              height="400px"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FgGFy3K2qzBHBoXTEUeolDo%2FProject3%3Ftype%3Ddesign%26node-id%3D11%253A618%26t%3DHFqFewwdybPu5LRn-1"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex center black-bg">
+      <div class="hud-container">
+        <div class="hud-animation-container">
+          <div class="hud-1 element rotate"></div>
+          <div class="hud-2 element rotate-reverse"></div>
+          <div class="hud-3 element flash"></div>
+          <div class="hud-4 element">11</div>
+          <div class="hud-5 element">22</div>
+        </div>
+        <div class="hud-bg">
+          <img src="../images/all/3/project3-hud.jpg" alt="" />
+        </div>
+      </div>
     </div>
 
     <div class="display">
@@ -41,5 +107,20 @@
 
     <script type="module" src="../js/plugins.js"></script>
     <script type="module" src="../js/main.js"></script>
+
+    <script type="module">
+      const num1 = document.querySelector('.hud-4');
+      const num2 = document.querySelector('.hud-5');
+
+      setInterval(function () {
+        const number = Math.round(Math.random() * 100);
+        num1.textContent = number;
+      }, 1000);
+
+      setInterval(function () {
+        const number = Math.round(Math.random() * 100);
+        num2.textContent = number;
+      }, 1500);
+    </script>
   </body>
 </html>
