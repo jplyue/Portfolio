@@ -1,0 +1,47 @@
+body {
+  padding: 0 20px;
+}
+
+/**
+** videos from youtube
+**/
+
+.videos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.videos .video {
+  position: relative;
+
+  width: calc(100% / 3 - (10px * 2 / 3));
+
+  background-color: #fff;
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.videos iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/**
+** end videos from youtube
+**/
+
+.story-video {
+  width: 400px;
+  margin: 20px 0;
+}
