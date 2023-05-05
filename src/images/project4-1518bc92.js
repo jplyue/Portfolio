@@ -1,0 +1,1 @@
+import"./plugins-86dce342.js";/* empty css              */document.querySelector("#play-video").addEventListener("click",()=>{document.querySelector(".story-video").querySelector("video").play()});document.querySelector("#stop-video").addEventListener("click",()=>{document.querySelector(".story-video").querySelector("video").pause()});
